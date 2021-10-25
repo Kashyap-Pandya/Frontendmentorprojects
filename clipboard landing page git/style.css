@@ -132,30 +132,29 @@ button {
   padding-bottom: 15px;;
 }
 
-.deviceimg {
+
+.pic {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 .three-features {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   margin-bottom: 150px;
 }
 
-.icon {
-  text-align: center;
-}
 
 .three-features h1 {
  padding-top: 30px;
   padding-bottom: 30px;
   color: var(--primary-head-text);
 }
+
+
 
 .company-logo {
   display: flex;
@@ -213,9 +212,193 @@ button {
 
 /*-------------------------------------------------------------- media query ------------------------------------------------------------------*/
 
+/*mobile*/
+
+@media only screen and (max-width:519px) {
+
+  .logo {
+    width: 120px;
+    padding-bottom: 50px;
+  }
+
+  .first-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .head-text{
+    font-size:2.3em;
+  }
+  .buttons  , .buttons-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top:40px;
+  }
+
+  .snippets {
+    padding-top:50px;
+  }
+
+  .snippets h3 {
+    padding-top: 15px;
+  }
+
+  .features-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+.features-list{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.laptop-pic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+
+
+.computer-image {
+  width: 75%;
+  object-position: top 0 right 0;
+}
+
+.clipboard h3 {
+  padding-top: 15px;
+}
+
+.picclass{
+  width:80%;
+} 
+
+.workflow {
+  margin-top:50px;
+}
+
+.three-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-feature , .third-feature {
+  padding-top: 50px;
+}
+
+.company-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.hero-head-bottom {
+  width: 90%;
+}
+
+.logo-bottom {
+  display: flex;
+  
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  height: 500px;
+  align-items: center;
+  
+}
+
+
+.otherlinks {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+
+
+
+/*tablet */
+@media only screen and (min-width:420px) and (max-width:749px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*small desktop */
+@media only screen and (min-width:750px) and (max-width:960px){
+
+body {
+    background-color:springgreen;
+}
+
+.pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picclass{
+  width:70%;
+}
+
+.features-sidebar {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  gap: 230px;
+  justify-content: space-evenly;
+}
+
+.computer-image {
+  min-width: 90%;
+  max-width: 120%;
+}
+
+.footer-wrap {
+  width: 100%;
+}
+
+.otherlinks a {
+  display: inline-block;
+  padding:10px;
+  text-decoration: none;
+  color: var(--primary-head-text);
+}
+
+}
+
+
+
+
 /* regular desktop */
 
-@media only screen and (min-width: 960px) and (max-width: 1300px) {
+@media only screen and (min-width: 961px) and (max-width: 1300px) {
   body {
     background-color: rgb(197, 245, 250);
   }
@@ -231,6 +414,17 @@ button {
   .computer-image {
     min-width: 50%;
     max-width: 120%;
+  }
+
+  .pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .picclass{
+    min-width: 50%;
+    max-width: 80%;
   }
 }
 
