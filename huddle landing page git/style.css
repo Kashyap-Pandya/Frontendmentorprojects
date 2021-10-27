@@ -1,0 +1,108 @@
+:root {
+  --primary-color: hsl(322, 100%, 66%);
+  --primary-light: hsl(321, 100%, 78%);
+  --secondary-light: hsl(0, 100%, 63%);
+
+  --primary-text: hsl(192, 100%, 9%);
+  --secondary-text: hsl(207, 100%, 98%);
+
+  --body-font: "Open Sans", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 100%, 100%);
+}
+
+/* -------------------------------------------------------- header-----------------------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.3rem;
+  align-items: center;
+}
+
+.header-button {
+  background-color: hsl(0, 100%, 100%);
+  border-style: solid;
+  font-family: var(--body-font);
+  color: var(--primary-color);
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 1em;
+  border-color: var(--primary-light);
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------section- main-heading---------------------*/
+
+.hero-head {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.main-heading {
+  color: var(--primary-text);
+  font-size: 2.2em;
+  font-family: var(--heading-font);
+}
+
+.main-sub-heading {
+  color: var(-primary-text);
+  font-weight: 400;
+  font-family: var(--body-font);
+}
+
+.main-button {
+  background-color: var(--primary-color);
+  color: hsl(0, 100%, 100%);
+  padding: 20px 60px;
+  border-radius: 30px;
+  font-size: 1em;
+  margin-top: 35px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/*-------------------------mockup-image------------------------------------*/
+
+.screen-mockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/*------------------------------------stats-----------------------------------*/
+
+.stats {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  width:15%;
+}
+
+.numbers {
+  font-size: 4em;
+  margin:15px 0;
+  color: var(--primary-text);
+  font-family: var(--body-font);
+  
+  font-weight: 700;
+}
+
+.stat-text {
+    font-size: 1.3em;
+    color: var(--secondary-text);
+    color:rgb(194, 201, 205);
+    text-align: center;
+    font-family: var(--body-font);
+    font-weight: 600;
+}
